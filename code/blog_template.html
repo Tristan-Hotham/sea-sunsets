@@ -1,0 +1,106 @@
+<!-- wp:paragraph -->
+<p><em>Some beaches give you the whole show, the Sun sliding into an empty sea. Others hide it behind a headland, an island or the far side of a bay. I traced the Sun's path from {{n.coast|int}} named beaches in Britain and Ireland, day by day through the year, to find out which is which.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/sea-sunsets/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.24089892">Read the paper</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>Ask anyone about a beach and the sunset comes up sooner or later. Can you watch it go down into the sea? The answer is less obvious than it looks, because the Sun does not set in the same place all year. At midsummer it goes down far to the north-west; at midwinter, well round in the south-west. A beach that looks due west may get its sea sunsets only in spring and autumn, with a headland at either end of its view taking the rest.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>So for every named beach in OpenStreetMap I stood an imaginary person at the water's edge and cast a fan of lines out to sea, one every quarter of a degree, along every bearing where the Sun sets or rises in the year. Then for each day I asked: does the line of sunset reach an open sea horizon, or does land get in the way?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Sunset coasts and sunrise coasts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>{{set.any_pc|pc}} of the beaches get a sea sunset on at least one day of the year, and {{rise.any_pc|pc}} a sea sunrise. Only {{set.all_year|int}} have a sea sunset every single day, {{all_year_set_counties.Cornwall|int}} of them on the Atlantic coast of Cornwall, where Sennen Cove looks out on nothing but ocean. A fifth of beaches, {{neither_pc|pc}}, get neither: they sit in bays, estuaries and firths where land closes every view of the horizon at both ends of the day.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_maps.png|Two maps of Britain and Ireland with beaches coloured from grey to deep orange by the number of days a year with a sunset into the sea (west coasts orange) and a sunrise out of the sea (east coasts orange)|Days a year with a sunset into, and a sunrise out of, the open sea.}}
+
+<!-- wp:paragraph -->
+<p>Wales is the sunset nation: {{nations.Wales.set_any_pc|pc}} of its beaches see the Sun go down into the sea on some day of the year. The east coasts belong to the sunrise. From Longsands at Tynemouth, Killiney in Dublin and {{all_year_rise_counties.Wexford|int}} beaches in Wexford, {{all_year_rise_counties.Wicklow|int}} in Wicklow and {{all_year_rise_counties.East Riding of Yorkshire|int}} in the East Riding of Yorkshire, the Sun comes up out of the sea every morning of the year. Only {{both.n|int}} beaches get both. Many of them face south or north across open water, so that the Sun can rise and set over the sea in the same season: {{both_counties.0.n|int}} are along the Essex coast at Clacton, and {{both_counties.1.n|int}} around the coast of Kent, from Margate to Folkestone and Broomhill Sands.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_roses.png|Four compass roses for Sennen Cove, Longsands, Troon and Woolacombe, with each day's sunset and sunrise bearing as a tick, gold or blue where the horizon is open sea and grey where land is in the way|A year of sunset and sunrise bearings at four beaches.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Winter is better</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>If you want a sea sunrise, go in winter. On 21 December {{rise.dec21|int}} beaches see the Sun rise out of the sea; on 21 June only {{rise.jun21|int}}. Sea sunsets hold up better through the year, but winter still wins: {{set.dec21|int}} beaches on the shortest day against {{set.jun21|int}} on the longest. In winter the Sun rises and sets further south, and more of our beaches have an open view that way. Fistral at Newquay is the exception that proves it: {{cases.fistral_beach.sea_set_days|int}} sea sunsets a year, but in deep winter the Sun goes down behind its own headland.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_calendar.png|Line chart of the share of beaches with a sea sunset and a sea sunrise on each day of the year: the sunrise line is high in winter and low in June, the sunset line nearly flat|The share of beaches with a sea sunset or sunrise, day by day.}}
+
+<!-- wp:pullquote -->
+<figure class="wp-block-pullquote"><blockquote><p>From Troon, Arran takes {{cases.troon.set_islands.Isle of Arran|int}} sunsets a year.</p></blockquote></figure>
+<!-- /wp:pullquote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Islands in the way</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Islands take a bite out of the year. From Troon on the Ayrshire coast, the mountains of Arran stand in front of the setting Sun through spring and autumn. Lundy, a small island about 30 km out in the Bristol Channel, hides the sunset from Woolacombe on {{cases.woolacombe_sands.set_islands.Lundy|int}} days and from Croyde on {{cases.croyde_beach.set_islands.Lundy|int}}, around the equinoxes, when the Sun goes down due west. The Isle of Man takes {{cases.fleswick_bay.set_islands.Isle of Man|int}} sunsets from Fleswick Bay under St Bees Head, and {{cases.gilpin_harbour.rise_islands.Isle of Man|int}} sunrises from the beaches of County Down. The Isle of Wight and Mull share the record, each getting in the way for {{island_top_n|int}} beaches: the Isle of Wight along the Solent and the Sussex coast, Mull from the beaches of Tiree, Coll and Iona at sunrise and around Oban at sunset.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_clyde.png|Map of the Firth of Clyde with lines from each beach towards the sunset on 20 March: the lines from the Ayrshire coast run west and end on the Isle of Arran, one from Kintyre runs out to sea|The line of sunset on 20 March from the beaches around the Firth of Clyde.}}
+
+<!-- wp:paragraph -->
+<p>Distance matters as much as the islands themselves, because the sea curves away. Stand on a beach with your eyes 3 m above the water and the sea horizon is only about 7 km off; beyond that, land has to be tall to show. At 50 km the bottom {{model.hidden_50km_m|int}} m of anything is hidden behind the curve of the sea. So the Isle of Man, over 100 km from Liverpool Bay, does not spoil the sunsets at Crosby, but Arran's peaks, about 35 km from Troon, very much do.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_islands.png|Bar chart of islands by the number of beaches where they hide the sunset or sunrise on some day of the year, led by the Isle of Wight and Mull|The islands that hide the Sun from the most beaches.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How I did this</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The beaches are every named beach in OpenStreetMap in the UK and Ireland, with pieces of the same beach joined up and lake and river beaches left out. The sea is OpenStreetMap's coastline, from the OpenFreeMap map tiles, turned into a grid of squares about 20 to 25 m across, out to 12 km from each beach. Beyond that I used the AWS terrain tiles, which tell you where land rises above sea level. On each beach I put the observer at the water's edge, at whichever spot along the beach has the widest view of the year's sunsets and sunrises, since you can walk along a beach. A piece of land counts as in the way only if it shows above the sea horizon, allowing for the Earth's curve and the way air bends light near the ground. The Sun's position comes from standard solar formulas for every day of 2026.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The caveats: this is about the line of sight, not the weather, so a sea sunset here is a promise of an open horizon, not of a clear evening. The coastline is the high water line, so on wide sands at low tide the sea in front of you is beach. The bending of light near the horizon changes from evening to evening, which can tip a borderline day either way. And only named beaches are in: Blackpool's main beach has no name in the data. If your favourite beach is missing or wrong, it may be a question of what has been mapped. Tap any beach on the map to see its own year of sunsets.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/sea-sunsets/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.24089892">Read the paper</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://github.com/Tristan-Hotham/sea-sunsets">Data and code</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Notes and sources</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Beaches and coastline: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL), queried with QLever and served as vector tiles by OpenFreeMap. Terrain: AWS Terrain Tiles. Islands and counties: Natural Earth.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Sun: solar declination after J. W. Spencer, Fourier series representation of the position of the sun, Search (1971).</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->

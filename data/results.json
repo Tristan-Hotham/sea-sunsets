@@ -1,0 +1,2188 @@
+{
+ "tiles": "20261101_080013_pt",
+ "n": {
+  "osm_pieces": 1826,
+  "beaches": 1768,
+  "coast": 1717,
+  "inland": 51,
+  "failed": 0,
+  "gb": 1282,
+  "ie": 435
+ },
+ "set": {
+  "any": 805,
+  "any_pc": 46.88410017472335,
+  "all_year": 52,
+  "all_year_pc": 3.0285381479324402,
+  "half": 255,
+  "none": 912,
+  "mean_days": 68.5940594059406,
+  "jun21": 303,
+  "dec21": 349
+ },
+ "rise": {
+  "any": 703,
+  "any_pc": 40.94350611531741,
+  "all_year": 75,
+  "all_year_pc": 4.368083867210251,
+  "half": 299,
+  "none": 1014,
+  "mean_days": 71.32323820617356,
+  "jun21": 231,
+  "dec21": 405
+ },
+ "both": {
+  "n": 152,
+  "pc": 8.85264997087944,
+  "same_day": 133,
+  "same_day_all_year": 0
+ },
+ "neither": 361,
+ "rise_only": 551,
+ "set_only": 653,
+ "neither_pc": 21.02504368083867,
+ "rise_only_pc": 32.09085614443797,
+ "set_only_pc": 38.03145020384392,
+ "summer_only_set": 138,
+ "winter_only_set": 209,
+ "jun_not_dec_set": 235,
+ "dec_not_jun_set": 281,
+ "nations": {
+  "England": {
+   "n": 608,
+   "set_any_pc": 48.35526315789473,
+   "rise_any_pc": 56.085526315789465,
+   "set_all_pc": 7.730263157894737,
+   "both_pc": 14.473684210526317,
+   "mean_set": 84.125,
+   "mean_rise": 115.24342105263158
+  },
+  "Scotland": {
+   "n": 450,
+   "set_any_pc": 44.44444444444444,
+   "rise_any_pc": 33.33333333333333,
+   "set_all_pc": 0.6666666666666667,
+   "both_pc": 5.555555555555555,
+   "mean_set": 57.69777777777778,
+   "mean_rise": 41.846666666666664
+  },
+  "Wales": {
+   "n": 203,
+   "set_any_pc": 67.48768472906403,
+   "rise_any_pc": 22.660098522167488,
+   "set_all_pc": 0.49261083743842365,
+   "both_pc": 6.896551724137931,
+   "mean_set": 123.29556650246306,
+   "mean_rise": 23.58128078817734
+  },
+  "Northern Ireland": {
+   "n": 21,
+   "set_any_pc": 33.33333333333333,
+   "rise_any_pc": 57.14285714285714,
+   "set_all_pc": 0.0,
+   "both_pc": 4.761904761904762,
+   "mean_set": 34.523809523809526,
+   "mean_rise": 58.19047619047619
+  },
+  "Ireland": {
+   "n": 435,
+   "set_any_pc": 38.39080459770115,
+   "rise_any_pc": 35.40229885057472,
+   "set_all_pc": 0.22988505747126436,
+   "both_pc": 5.517241379310345,
+   "mean_set": 34.275862068965516,
+   "mean_rise": 63.342528735632186
+  }
+ },
+ "islands": [
+  {
+   "name": "Isle of Wight",
+   "set_beaches": 10,
+   "set_days": 1063,
+   "rise_beaches": 21,
+   "rise_days": 1362,
+   "examples": [
+    {
+     "beach": "East Winner",
+     "days": 171,
+     "event": "set",
+     "county": "Portsmouth"
+    },
+    {
+     "beach": "West Winner",
+     "days": 155,
+     "event": "set",
+     "county": "Portsmouth"
+    },
+    {
+     "beach": "Medmerry Beach",
+     "days": 144,
+     "event": "set",
+     "county": "West Sussex"
+    },
+    {
+     "beach": "Southsea nudist beach",
+     "days": 133,
+     "event": "set",
+     "county": "Portsmouth"
+    },
+    {
+     "beach": "Eastney Beach",
+     "days": 127,
+     "event": "set",
+     "county": "Portsmouth"
+    },
+    {
+     "beach": "Browndown Point",
+     "days": 125,
+     "event": "set",
+     "county": "Hampshire"
+    }
+   ]
+  },
+  {
+   "name": "Isle of Mull",
+   "set_beaches": 8,
+   "set_days": 416,
+   "rise_beaches": 23,
+   "rise_days": 2089,
+   "examples": [
+    {
+     "beach": "Tràigh Mhòr",
+     "days": 365,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na h-Osnaishe",
+     "days": 169,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na Sìolaig",
+     "days": 149,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na Muic",
+     "days": 149,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Tuath",
+     "days": 149,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh an Dùin",
+     "days": 147,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Lewis and Harris",
+   "set_beaches": 16,
+   "set_days": 699,
+   "rise_beaches": 10,
+   "rise_days": 1649,
+   "examples": [
+    {
+     "beach": "Corran Rà",
+     "days": 365,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Sgeir a' Bhuallt",
+     "days": 302,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Taigh Cheileagraigh",
+     "days": 247,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Sanduig",
+     "days": 189,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Traigh Baile Fo Thuath",
+     "days": 186,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Traigh an t-Seana-chaisteil",
+     "days": 171,
+     "event": "rise",
+     "county": "Eilean Siar"
+    }
+   ]
+  },
+  {
+   "name": "Jura",
+   "set_beaches": 5,
+   "set_days": 539,
+   "rise_beaches": 21,
+   "rise_days": 764,
+   "examples": [
+    {
+     "beach": "Queen's Bay / Loch Staosnaig",
+     "days": 234,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Ronachan Beach",
+     "days": 149,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Corriechrevie Beach",
+     "days": 142,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "The Caves",
+     "days": 141,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Twin Beaches",
+     "days": 105,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Ardalanish Beach",
+     "days": 104,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Lundy",
+   "set_beaches": 19,
+   "set_days": 513,
+   "rise_beaches": 0,
+   "rise_days": 0,
+   "examples": [
+    {
+     "beach": "Peppercombe Beach",
+     "days": 58,
+     "event": "set",
+     "county": "Devon"
+    },
+    {
+     "beach": "Gauter Beach",
+     "days": 37,
+     "event": "set",
+     "county": "Devon"
+    },
+    {
+     "beach": "Grunta Beach",
+     "days": 28,
+     "event": "set",
+     "county": "Devon"
+    },
+    {
+     "beach": "Croyde Beach",
+     "days": 28,
+     "event": "set",
+     "county": "Devon"
+    },
+    {
+     "beach": "Combesgate Beach",
+     "days": 28,
+     "event": "set",
+     "county": "Devon"
+    },
+    {
+     "beach": "South Tail",
+     "days": 27,
+     "event": "set",
+     "county": "Devon"
+    }
+   ]
+  },
+  {
+   "name": "Skye",
+   "set_beaches": 12,
+   "set_days": 904,
+   "rise_beaches": 6,
+   "rise_days": 236,
+   "examples": [
+    {
+     "beach": "Redpoint Beach",
+     "days": 150,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Cladach an Uillt Ghrìsean",
+     "days": 117,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Cladach Melvaig",
+     "days": 114,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Big Sand Beach",
+     "days": 109,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Refuge Bay",
+     "days": 107,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Cladach Allt an Fheidh",
+     "days": 98,
+     "event": "set",
+     "county": "Highland"
+    }
+   ]
+  },
+  {
+   "name": "Scarba",
+   "set_beaches": 0,
+   "set_days": 0,
+   "rise_beaches": 15,
+   "rise_days": 116,
+   "examples": [
+    {
+     "beach": "Ardalanish Beach",
+     "days": 27,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Queen's Bay / Loch Staosnaig",
+     "days": 24,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Uisken Beach",
+     "days": 16,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh nan Cisteachan",
+     "days": 16,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh nam Fuaran",
+     "days": 16,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Bhàigh",
+     "days": 3,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Isle of Arran",
+   "set_beaches": 10,
+   "set_days": 1359,
+   "rise_beaches": 5,
+   "rise_days": 939,
+   "examples": [
+    {
+     "beach": "Grogport Beach",
+     "days": 300,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Port Rìgh",
+     "days": 280,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Torrisdale Bay",
+     "days": 240,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "South Beach",
+     "days": 214,
+     "event": "set",
+     "county": "North Ayrshire"
+    },
+    {
+     "beach": "Ardneil Bay",
+     "days": 209,
+     "event": "set",
+     "county": "North Ayrshire"
+    },
+    {
+     "beach": "Ardeer Beach",
+     "days": 175,
+     "event": "set",
+     "county": "North Ayrshire"
+    }
+   ]
+  },
+  {
+   "name": "Ulva",
+   "set_beaches": 1,
+   "set_days": 31,
+   "rise_beaches": 13,
+   "rise_days": 244,
+   "examples": [
+    {
+     "beach": "Tràigh na Crìche",
+     "days": 69,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh an t-Suidhe",
+     "days": 65,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Black Beach",
+     "days": 31,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Port nam Mairtir",
+     "days": 29,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "An Tràigh-lochain",
+     "days": 13,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Cul Sgathain Sand",
+     "days": 11,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Barra",
+   "set_beaches": 14,
+   "set_days": 202,
+   "rise_beaches": 0,
+   "rise_days": 0,
+   "examples": [
+    {
+     "beach": "Coilleag a' Phrionnsa",
+     "days": 90,
+     "event": "set",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Tràigh na h-Osnaishe",
+     "days": 24,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Halum",
+     "days": 16,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Shathalaim",
+     "days": 11,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Hogh",
+     "days": 10,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Little Feall Beach",
+     "days": 9,
+     "event": "set",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Iona",
+   "set_beaches": 1,
+   "set_days": 5,
+   "rise_beaches": 12,
+   "rise_days": 93,
+   "examples": [
+    {
+     "beach": "Tràigh Mhòr",
+     "days": 20,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Crionaig",
+     "days": 15,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na Sìolaig",
+     "days": 13,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na Muic",
+     "days": 12,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh an Dùin",
+     "days": 11,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Fidden Beach",
+     "days": 5,
+     "event": "set",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Eigg",
+   "set_beaches": 7,
+   "set_days": 299,
+   "rise_beaches": 6,
+   "rise_days": 95,
+   "examples": [
+    {
+     "beach": "Port na Murrach/Rhu Beach",
+     "days": 76,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Cùl na Croise",
+     "days": 57,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Refuge Bay",
+     "days": 48,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Samalman Beach",
+     "days": 43,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Tràigh Chrògain",
+     "days": 39,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Singing Sands",
+     "days": 37,
+     "event": "set",
+     "county": "Highland"
+    }
+   ]
+  },
+  {
+   "name": "Islay",
+   "set_beaches": 9,
+   "set_days": 826,
+   "rise_beaches": 4,
+   "rise_days": 83,
+   "examples": [
+    {
+     "beach": "Traigh nam Feannag",
+     "days": 347,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Machrihanish Beach",
+     "days": 130,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "The Caves",
+     "days": 90,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Traigh Bhan",
+     "days": 84,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Cladach Nigh' Mhaol-choinnich",
+     "days": 82,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Ronachan Beach",
+     "days": 53,
+     "event": "set",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Mingulay",
+   "set_beaches": 12,
+   "set_days": 60,
+   "rise_beaches": 0,
+   "rise_days": 0,
+   "examples": [
+    {
+     "beach": "Clachan Torra Shoghaigir",
+     "days": 9,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh nan Gilean",
+     "days": 8,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Ghrianal",
+     "days": 8,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Hogh",
+     "days": 7,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Baile a' Mhuilinn",
+     "days": 7,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "An Tràigh Bheag",
+     "days": 6,
+     "event": "set",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Lunga",
+   "set_beaches": 1,
+   "set_days": 27,
+   "rise_beaches": 11,
+   "rise_days": 67,
+   "examples": [
+    {
+     "beach": "Black Beach",
+     "days": 27,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na h-Osnaishe",
+     "days": 12,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Gharbh",
+     "days": 9,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "An Tràigh-lochain",
+     "days": 8,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na Muic",
+     "days": 6,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh an Dùin",
+     "days": 6,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Rùm",
+   "set_beaches": 7,
+   "set_days": 617,
+   "rise_beaches": 5,
+   "rise_days": 71,
+   "examples": [
+    {
+     "beach": "Singing Sands",
+     "days": 188,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Tràigh Chlèadail",
+     "days": 168,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Refuge Bay",
+     "days": 73,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Camusdarach Beach",
+     "days": 70,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Cladach a' Ghlinne",
+     "days": 60,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Port na Murrach/Rhu Beach",
+     "days": 33,
+     "event": "set",
+     "county": "Highland"
+    }
+   ]
+  },
+  {
+   "name": "Cape Clear Island",
+   "set_beaches": 11,
+   "set_days": 355,
+   "rise_beaches": 1,
+   "rise_days": 58,
+   "examples": [
+    {
+     "beach": "Trá Crua",
+     "days": 116,
+     "event": "set",
+     "county": "Cork"
+    },
+    {
+     "beach": "Cow Strand",
+     "days": 83,
+     "event": "set",
+     "county": "Cork"
+    },
+    {
+     "beach": "Silver Strand",
+     "days": 73,
+     "event": "set",
+     "county": "Cork"
+    },
+    {
+     "beach": "Galley Cove Beach",
+     "days": 58,
+     "event": "rise",
+     "county": "Cork"
+    },
+    {
+     "beach": "Trá Bán",
+     "days": 13,
+     "event": "set",
+     "county": "Cork"
+    },
+    {
+     "beach": "Tráigh na nDabhcha",
+     "days": 12,
+     "event": "set",
+     "county": "Cork"
+    }
+   ]
+  },
+  {
+   "name": "Inishmaan",
+   "set_beaches": 12,
+   "set_days": 491,
+   "rise_beaches": 0,
+   "rise_days": 0,
+   "examples": [
+    {
+     "beach": "Port na Cille",
+     "days": 165,
+     "event": "set",
+     "county": "Clare"
+    },
+    {
+     "beach": "Lár na Trá",
+     "days": 118,
+     "event": "set",
+     "county": "Clare"
+    },
+    {
+     "beach": "Poll na gCaorach",
+     "days": 97,
+     "event": "set",
+     "county": "Clare"
+    },
+    {
+     "beach": "Trawee",
+     "days": 30,
+     "event": "set",
+     "county": "Clare"
+    },
+    {
+     "beach": "Fanore Beach",
+     "days": 27,
+     "event": "set",
+     "county": "Clare"
+    },
+    {
+     "beach": "Furbo Beach",
+     "days": 25,
+     "event": "set",
+     "county": "Galway"
+    }
+   ]
+  },
+  {
+   "name": "Eilean Musimul",
+   "set_beaches": 1,
+   "set_days": 35,
+   "rise_beaches": 10,
+   "rise_days": 23,
+   "examples": [
+    {
+     "beach": "Fidden Beach",
+     "days": 35,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na Muic",
+     "days": 4,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh an Dùin",
+     "days": 3,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Port Snòig",
+     "days": 3,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Cul Sgathain Sand",
+     "days": 3,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na Sìolaig",
+     "days": 2,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Berneray",
+   "set_beaches": 7,
+   "set_days": 39,
+   "rise_beaches": 4,
+   "rise_days": 133,
+   "examples": [
+    {
+     "beach": "Traigh an t-Seana-chaisteil",
+     "days": 81,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Traigh na h-Uidhe",
+     "days": 30,
+     "event": "set",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Traigh Baile Fo Thuath",
+     "days": 25,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Lòn Hulabhaig",
+     "days": 23,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Tràigh Ear",
+     "days": 4,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Tràigh Thodhrasdail",
+     "days": 2,
+     "event": "set",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Boreray",
+   "set_beaches": 7,
+   "set_days": 266,
+   "rise_beaches": 4,
+   "rise_days": 73,
+   "examples": [
+    {
+     "beach": "Traigh an Teampaill",
+     "days": 54,
+     "event": "set",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Tràigh na Cleabhaig",
+     "days": 46,
+     "event": "set",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Tràigh Iar",
+     "days": 43,
+     "event": "set",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Traigh an t-Seana-chaisteil",
+     "days": 40,
+     "event": "set",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Traigh Baile Fo Thuath",
+     "days": 34,
+     "event": "set",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Traigh na h-Uidhe",
+     "days": 33,
+     "event": "set",
+     "county": "Eilean Siar"
+    }
+   ]
+  },
+  {
+   "name": "Castle Island",
+   "set_beaches": 11,
+   "set_days": 519,
+   "rise_beaches": 0,
+   "rise_days": 0,
+   "examples": [
+    {
+     "beach": "Trá Crua",
+     "days": 102,
+     "event": "set",
+     "county": "Cork"
+    },
+    {
+     "beach": "Trá Bán",
+     "days": 87,
+     "event": "set",
+     "county": "Cork"
+    },
+    {
+     "beach": "Cow Strand",
+     "days": 82,
+     "event": "set",
+     "county": "Cork"
+    },
+    {
+     "beach": "The South Strand",
+     "days": 56,
+     "event": "set",
+     "county": "Cork"
+    },
+    {
+     "beach": "Trá na gCruach",
+     "days": 46,
+     "event": "set",
+     "county": "Cork"
+    },
+    {
+     "beach": "Silver Strand",
+     "days": 43,
+     "event": "set",
+     "county": "Cork"
+    }
+   ]
+  },
+  {
+   "name": "Inishturk",
+   "set_beaches": 11,
+   "set_days": 537,
+   "rise_beaches": 0,
+   "rise_days": 0,
+   "examples": [
+    {
+     "beach": "Lettergesh Beach",
+     "days": 74,
+     "event": "set",
+     "county": "Galway"
+    },
+    {
+     "beach": "Brnabaun Beach",
+     "days": 64,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "White Strand",
+     "days": 60,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "Glassilaun Beach",
+     "days": 60,
+     "event": "set",
+     "county": "Galway"
+    },
+    {
+     "beach": "Bunlough Strand",
+     "days": 55,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "Turloughbeg Strand",
+     "days": 52,
+     "event": "set",
+     "county": "Mayo"
+    }
+   ]
+  },
+  {
+   "name": "Tiree",
+   "set_beaches": 10,
+   "set_days": 355,
+   "rise_beaches": 0,
+   "rise_days": 0,
+   "examples": [
+    {
+     "beach": "Tràigh Halum",
+     "days": 87,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Sgaisteil",
+     "days": 78,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh nan Siolag",
+     "days": 69,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Chrossapol",
+     "days": 52,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Hogh",
+     "days": 20,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na Crìche",
+     "days": 12,
+     "event": "set",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "South Uist",
+   "set_beaches": 7,
+   "set_days": 125,
+   "rise_beaches": 3,
+   "rise_days": 289,
+   "examples": [
+    {
+     "beach": "Tràigh Sgùrabhal",
+     "days": 144,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Tràigh Bhàn",
+     "days": 117,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Coilleag a' Phrionnsa",
+     "days": 98,
+     "event": "set",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Traigh Mhòr",
+     "days": 28,
+     "event": "rise",
+     "county": "Eilean Siar"
+    },
+    {
+     "beach": "Fiskavaig Bay",
+     "days": 10,
+     "event": "set",
+     "county": "Highland"
+    },
+    {
+     "beach": "Tràigh Bhousd",
+     "days": 5,
+     "event": "set",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Eilean Chalbha",
+   "set_beaches": 0,
+   "set_days": 0,
+   "rise_beaches": 10,
+   "rise_days": 36,
+   "examples": [
+    {
+     "beach": "Tràigh Mhòr",
+     "days": 9,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Crionaig",
+     "days": 9,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh an Dùin",
+     "days": 5,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na Sìolaig",
+     "days": 3,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na Muic",
+     "days": 3,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Bhàigh",
+     "days": 2,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Carricknashasky",
+   "set_beaches": 10,
+   "set_days": 510,
+   "rise_beaches": 0,
+   "rise_days": 0,
+   "examples": [
+    {
+     "beach": "Turloughbeg Strand",
+     "days": 111,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "Carrowmore Beach",
+     "days": 83,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "Carrownisky Beach",
+     "days": 78,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "Cross Strand",
+     "days": 64,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "White Strand",
+     "days": 35,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "Thornhill Strand",
+     "days": 33,
+     "event": "set",
+     "county": "Mayo"
+    }
+   ]
+  },
+  {
+   "name": "Inishbofin (Galway)",
+   "set_beaches": 9,
+   "set_days": 223,
+   "rise_beaches": 1,
+   "rise_days": 13,
+   "examples": [
+    {
+     "beach": "Turloughbeg Strand",
+     "days": 37,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "Carrownisky Beach",
+     "days": 34,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "Cross Strand",
+     "days": 32,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "Bunlough Strand",
+     "days": 30,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "White Strand",
+     "days": 25,
+     "event": "set",
+     "county": "Mayo"
+    },
+    {
+     "beach": "Brnabaun Beach",
+     "days": 24,
+     "event": "set",
+     "county": "Mayo"
+    }
+   ]
+  },
+  {
+   "name": "Gometra",
+   "set_beaches": 1,
+   "set_days": 40,
+   "rise_beaches": 8,
+   "rise_days": 42,
+   "examples": [
+    {
+     "beach": "Black Beach",
+     "days": 40,
+     "event": "set",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh na h-Osnaishe",
+     "days": 10,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Crionaig",
+     "days": 8,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "An Tràigh-lochain",
+     "days": 7,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Mhòr",
+     "days": 6,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    },
+    {
+     "beach": "Tràigh Shòrabaidh",
+     "days": 4,
+     "event": "rise",
+     "county": "Argyll and Bute"
+    }
+   ]
+  },
+  {
+   "name": "Steep Holm",
+   "set_beaches": 4,
+   "set_days": 68,
+   "rise_beaches": 5,
+   "rise_days": 45,
+   "examples": [
+    {
+     "beach": "Berrow Sands",
+     "days": 30,
+     "event": "set",
+     "county": "Somerset"
+    },
+    {
+     "beach": "The Bendricks",
+     "days": 16,
+     "event": "rise",
+     "county": "Vale of Glamorgan"
+    },
+    {
+     "beach": "Ladye Bay",
+     "days": 16,
+     "event": "set",
+     "county": "North Somerset"
+    },
+    {
+     "beach": "Pebble Beach",
+     "days": 13,
+     "event": "rise",
+     "county": "Vale of Glamorgan"
+    },
+    {
+     "beach": "Clevedon Beach",
+     "days": 13,
+     "event": "set",
+     "county": "North Somerset"
+    },
+    {
+     "beach": "Sand Bay",
+     "days": 9,
+     "event": "set",
+     "county": "North Somerset"
+    }
+   ]
+  }
+ ],
+ "dup_island_names": {
+  "Mainland": [
+   "Mainland (Orkney)",
+   "Mainland (Shetland Islands)"
+  ],
+  "Horse Island": [
+   "Horse Island (Cork)",
+   "Horse Island (Highland)"
+  ],
+  "Inishbofin": [
+   "Inishbofin (Donegal)",
+   "Inishbofin (Galway)"
+  ]
+ },
+ "island_beaches_set": 303,
+ "island_beaches_rise": 179,
+ "top_both": [
+  {
+   "name": "Botany Bay",
+   "county": "Kent",
+   "nation": "England",
+   "set": 196,
+   "rise": 341,
+   "same": 196
+  },
+  {
+   "name": "Warham Hole",
+   "county": "Norfolk",
+   "nation": "England",
+   "set": 194,
+   "rise": 226,
+   "same": 194
+  },
+  {
+   "name": "Palm Bay",
+   "county": "Kent",
+   "nation": "England",
+   "set": 192,
+   "rise": 322,
+   "same": 192
+  },
+  {
+   "name": "Bob Hall's Sand",
+   "county": "Norfolk",
+   "nation": "England",
+   "set": 192,
+   "rise": 216,
+   "same": 192
+  },
+  {
+   "name": "Walpole Bay",
+   "county": "Kent",
+   "nation": "England",
+   "set": 206,
+   "rise": 188,
+   "same": 188
+  },
+  {
+   "name": "Fluke Peel",
+   "county": "Aberdeenshire",
+   "nation": "Scotland",
+   "set": 186,
+   "rise": 196,
+   "same": 186
+  },
+  {
+   "name": "West Sands",
+   "county": "Norfolk",
+   "nation": "England",
+   "set": 179,
+   "rise": 195,
+   "same": 179
+  },
+  {
+   "name": "Holkham Naturist Beach",
+   "county": "Norfolk",
+   "nation": "England",
+   "set": 168,
+   "rise": 194,
+   "same": 168
+  },
+  {
+   "name": "High Sand",
+   "county": "Norfolk",
+   "nation": "England",
+   "set": 183,
+   "rise": 163,
+   "same": 163
+  },
+  {
+   "name": "Margate Main Sands",
+   "county": "Kent",
+   "nation": "England",
+   "set": 189,
+   "rise": 143,
+   "same": 143
+  },
+  {
+   "name": "Porth Dyniewaid",
+   "county": "Conwy",
+   "nation": "Wales",
+   "set": 143,
+   "rise": 182,
+   "same": 143
+  },
+  {
+   "name": "Phingask Shore",
+   "county": "Aberdeenshire",
+   "nation": "Scotland",
+   "set": 137,
+   "rise": 167,
+   "same": 137
+  },
+  {
+   "name": "Herne Bay Beach",
+   "county": "Kent",
+   "nation": "England",
+   "set": 130,
+   "rise": 168,
+   "same": 124
+  },
+  {
+   "name": "Worthing Beach",
+   "county": "West Sussex",
+   "nation": "England",
+   "set": 123,
+   "rise": 137,
+   "same": 123
+  },
+  {
+   "name": "Littlehampton East Beach",
+   "county": "West Sussex",
+   "nation": "England",
+   "set": 120,
+   "rise": 163,
+   "same": 120
+  }
+ ],
+ "cases": {
+  "sennen_cove": {
+   "id": 907,
+   "name": "Sennen Cove",
+   "county": "Cornwall",
+   "nation": "England",
+   "sea_set_days": 365,
+   "sea_rise_days": 0,
+   "set_jun21": true,
+   "set_dec21": true,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": null
+  },
+  "fistral_beach": {
+   "id": 333,
+   "name": "Fistral Beach",
+   "county": "Cornwall",
+   "nation": "England",
+   "sea_set_days": 304,
+   "sea_rise_days": 0,
+   "set_jun21": true,
+   "set_dec21": false,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 2.0
+  },
+  "porthcurno": {
+   "id": 772,
+   "name": "Porthcurno",
+   "county": "Cornwall",
+   "nation": "England",
+   "sea_set_days": 0,
+   "sea_rise_days": 123,
+   "set_jun21": false,
+   "set_dec21": false,
+   "rise_jun21": false,
+   "rise_dec21": true,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 0.08
+  },
+  "longsands": {
+   "id": 524,
+   "name": "Longsands",
+   "county": "North Tyneside",
+   "nation": "England",
+   "sea_set_days": 0,
+   "sea_rise_days": 365,
+   "set_jun21": false,
+   "set_dec21": false,
+   "rise_jun21": true,
+   "rise_dec21": true,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 0.08
+  },
+  "troon": {
+   "id": 1130,
+   "name": "Troon",
+   "county": "South Ayrshire",
+   "nation": "Scotland",
+   "sea_set_days": 117,
+   "sea_rise_days": 0,
+   "set_jun21": false,
+   "set_dec21": true,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {
+    "Isle of Arran": 134,
+    "Lady Isle": 12
+   },
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 28.5
+  },
+  "woolacombe_sands": {
+   "id": 1311,
+   "name": "Woolacombe Sands",
+   "county": "Devon",
+   "nation": "England",
+   "sea_set_days": 333,
+   "sea_rise_days": 0,
+   "set_jun21": true,
+   "set_dec21": false,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {
+    "Lundy": 26
+   },
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 31.35
+  },
+  "croyde_beach": {
+   "id": 258,
+   "name": "Croyde Beach",
+   "county": "Devon",
+   "nation": "England",
+   "sea_set_days": 275,
+   "sea_rise_days": 0,
+   "set_jun21": true,
+   "set_dec21": false,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {
+    "Lundy": 28
+   },
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 19.875
+  },
+  "fleswick_bay": {
+   "id": 334,
+   "name": "Fleswick Bay",
+   "county": "Cumbria",
+   "nation": "England",
+   "sea_set_days": 280,
+   "sea_rise_days": 0,
+   "set_jun21": false,
+   "set_dec21": true,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {
+    "Isle of Man": 44
+   },
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 56.55
+  },
+  "crosby_beach": {
+   "id": 256,
+   "name": "Crosby Beach",
+   "county": "Sefton",
+   "nation": "England",
+   "sea_set_days": 262,
+   "sea_rise_days": 0,
+   "set_jun21": true,
+   "set_dec21": false,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 43.35
+  },
+  "half_moon_bay": {
+   "id": 399,
+   "name": "Half Moon Bay",
+   "county": "Lancashire",
+   "nation": "England",
+   "sea_set_days": 215,
+   "sea_rise_days": 0,
+   "set_jun21": false,
+   "set_dec21": true,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 15.9
+  },
+  "killiney_beach": {
+   "id": 1519,
+   "name": "Killiney Beach",
+   "county": "Dún Laoghaire-Rathdown",
+   "nation": "Ireland",
+   "sea_set_days": 0,
+   "sea_rise_days": 365,
+   "set_jun21": false,
+   "set_dec21": false,
+   "rise_jun21": true,
+   "rise_dec21": true,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 0.08
+  },
+  "dollymount_strand": {
+   "id": 1454,
+   "name": "Dollymount Strand",
+   "county": "Dublin",
+   "nation": "Ireland",
+   "sea_set_days": 0,
+   "sea_rise_days": 183,
+   "set_jun21": false,
+   "set_dec21": false,
+   "rise_jun21": false,
+   "rise_dec21": true,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 0.22
+  },
+  "inch_beach": {
+   "id": 1509,
+   "name": "Inch Beach",
+   "county": "Kerry",
+   "nation": "Ireland",
+   "sea_set_days": 94,
+   "sea_rise_days": 0,
+   "set_jun21": false,
+   "set_dec21": false,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 7.32
+  },
+  "keem_beach": {
+   "id": 1514,
+   "name": "Keem Beach",
+   "county": "Mayo",
+   "nation": "Ireland",
+   "sea_set_days": 0,
+   "sea_rise_days": 0,
+   "set_jun21": false,
+   "set_dec21": false,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 0.1
+  },
+  "lahinch_beach": {
+   "id": 1527,
+   "name": "Lahinch Beach",
+   "county": "Clare",
+   "nation": "Ireland",
+   "sea_set_days": 175,
+   "sea_rise_days": 0,
+   "set_jun21": false,
+   "set_dec21": true,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 2.4
+  },
+  "gilpin_harbour": {
+   "id": 357,
+   "name": "Gilpin Harbour",
+   "county": "Down",
+   "nation": "Northern Ireland",
+   "sea_set_days": 0,
+   "sea_rise_days": 111,
+   "set_jun21": false,
+   "set_dec21": false,
+   "rise_jun21": false,
+   "rise_dec21": true,
+   "set_islands": {},
+   "rise_islands": {
+    "Isle of Man": 73
+   },
+   "both_days": 0,
+   "set_block_med_km": 0.66
+  },
+  "brighton_beach": {
+   "id": 122,
+   "name": "Brighton Beach",
+   "county": "Brighton and Hove",
+   "nation": "England",
+   "sea_set_days": 147,
+   "sea_rise_days": 109,
+   "set_jun21": false,
+   "set_dec21": true,
+   "rise_jun21": false,
+   "rise_dec21": true,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 109,
+   "set_block_med_km": 0.34
+  },
+  "rhossili_bay_beach": {
+   "id": 828,
+   "name": "Rhossili Bay Beach",
+   "county": "Swansea",
+   "nation": "Wales",
+   "sea_set_days": 202,
+   "sea_rise_days": 0,
+   "set_jun21": false,
+   "set_dec21": true,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {
+    "Caldey Island": 6,
+    "Spur Island": 1
+   },
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 27.45
+  },
+  "whitesands_beach": {
+   "id": 1298,
+   "name": "Whitesands Beach",
+   "county": "Pembrokeshire",
+   "nation": "Wales",
+   "sea_set_days": 234,
+   "sea_rise_days": 0,
+   "set_jun21": true,
+   "set_dec21": false,
+   "rise_jun21": false,
+   "rise_dec21": false,
+   "set_islands": {
+    "Ramsey Island": 20,
+    "Carreg Rhoson": 15,
+    "North Bishop": 13
+   },
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 3.14
+  },
+  "botany_bay": {
+   "id": 105,
+   "name": "Botany Bay",
+   "county": "Kent",
+   "nation": "England",
+   "sea_set_days": 196,
+   "sea_rise_days": 341,
+   "set_jun21": true,
+   "set_dec21": false,
+   "rise_jun21": true,
+   "rise_dec21": false,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 196,
+   "set_block_med_km": 0.12
+  },
+  "saltburn_sands": {
+   "id": 861,
+   "name": "Saltburn Sands",
+   "county": "Redcar and Cleveland",
+   "nation": "England",
+   "sea_set_days": 0,
+   "sea_rise_days": 187,
+   "set_jun21": false,
+   "set_dec21": false,
+   "rise_jun21": true,
+   "rise_dec21": false,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 0,
+   "set_block_med_km": 0.68
+  },
+  "durdle_door": {
+   "id": 296,
+   "name": "Durdle Door",
+   "county": "Dorset",
+   "nation": "England",
+   "sea_set_days": 9,
+   "sea_rise_days": 117,
+   "set_jun21": false,
+   "set_dec21": false,
+   "rise_jun21": false,
+   "rise_dec21": true,
+   "set_islands": {},
+   "rise_islands": {},
+   "both_days": 9,
+   "set_block_med_km": 9.86
+  }
+ },
+ "all_year_set_counties": {
+  "Cornwall": 43,
+  "Devon": 4,
+  "Argyll and Bute": 2,
+  "Gwynedd": 1,
+  "Eilean Siar": 1,
+  "Kerry": 1
+ },
+ "all_year_rise_counties": {
+  "Wexford": 15,
+  "Wicklow": 14,
+  "East Riding of Yorkshire": 10,
+  "Kent": 6,
+  "Northumberland": 5,
+  "Suffolk": 4
+ },
+ "iom": {
+  "name": "Isle of Man",
+  "set_beaches": 2,
+  "set_days": 85,
+  "rise_beaches": 3,
+  "rise_days": 205,
+  "examples": [
+   {
+    "beach": "Mill Quarter Beach",
+    "days": 73,
+    "event": "rise",
+    "county": "Down"
+   },
+   {
+    "beach": "Gilpin Harbour",
+    "days": 73,
+    "event": "rise",
+    "county": "Down"
+   },
+   {
+    "beach": "Kilclief Beach",
+    "days": 59,
+    "event": "rise",
+    "county": "Down"
+   },
+   {
+    "beach": "Fleswick Bay",
+    "days": 44,
+    "event": "set",
+    "county": "Cumbria"
+   },
+   {
+    "beach": "North Beach",
+    "days": 41,
+    "event": "set",
+    "county": "Cumbria"
+   }
+  ]
+ },
+ "iow": {
+  "name": "Isle of Wight",
+  "set_beaches": 10,
+  "set_days": 1063,
+  "rise_beaches": 21,
+  "rise_days": 1362,
+  "examples": [
+   {
+    "beach": "East Winner",
+    "days": 171,
+    "event": "set",
+    "county": "Portsmouth"
+   },
+   {
+    "beach": "West Winner",
+    "days": 155,
+    "event": "set",
+    "county": "Portsmouth"
+   },
+   {
+    "beach": "Medmerry Beach",
+    "days": 144,
+    "event": "set",
+    "county": "West Sussex"
+   },
+   {
+    "beach": "Southsea nudist beach",
+    "days": 133,
+    "event": "set",
+    "county": "Portsmouth"
+   },
+   {
+    "beach": "Eastney Beach",
+    "days": 127,
+    "event": "set",
+    "county": "Portsmouth"
+   },
+   {
+    "beach": "Browndown Point",
+    "days": 125,
+    "event": "set",
+    "county": "Hampshire"
+   }
+  ]
+ },
+ "lundy": {
+  "name": "Lundy",
+  "set_beaches": 19,
+  "set_days": 513,
+  "rise_beaches": 0,
+  "rise_days": 0,
+  "examples": [
+   {
+    "beach": "Peppercombe Beach",
+    "days": 58,
+    "event": "set",
+    "county": "Devon"
+   },
+   {
+    "beach": "Gauter Beach",
+    "days": 37,
+    "event": "set",
+    "county": "Devon"
+   },
+   {
+    "beach": "Grunta Beach",
+    "days": 28,
+    "event": "set",
+    "county": "Devon"
+   },
+   {
+    "beach": "Croyde Beach",
+    "days": 28,
+    "event": "set",
+    "county": "Devon"
+   },
+   {
+    "beach": "Combesgate Beach",
+    "days": 28,
+    "event": "set",
+    "county": "Devon"
+   },
+   {
+    "beach": "South Tail",
+    "days": 27,
+    "event": "set",
+    "county": "Devon"
+   }
+  ]
+ },
+ "arran": {
+  "name": "Isle of Arran",
+  "set_beaches": 10,
+  "set_days": 1359,
+  "rise_beaches": 5,
+  "rise_days": 939,
+  "examples": [
+   {
+    "beach": "Grogport Beach",
+    "days": 300,
+    "event": "rise",
+    "county": "Argyll and Bute"
+   },
+   {
+    "beach": "Port Rìgh",
+    "days": 280,
+    "event": "rise",
+    "county": "Argyll and Bute"
+   },
+   {
+    "beach": "Torrisdale Bay",
+    "days": 240,
+    "event": "rise",
+    "county": "Argyll and Bute"
+   },
+   {
+    "beach": "South Beach",
+    "days": 214,
+    "event": "set",
+    "county": "North Ayrshire"
+   },
+   {
+    "beach": "Ardneil Bay",
+    "days": 209,
+    "event": "set",
+    "county": "North Ayrshire"
+   },
+   {
+    "beach": "Ardeer Beach",
+    "days": 175,
+    "event": "set",
+    "county": "North Ayrshire"
+   }
+  ]
+ },
+ "island_top_n": 31,
+ "island_top": [
+  "Isle of Mull",
+  "Isle of Wight"
+ ],
+ "both_counties": [
+  {
+   "county": "Essex",
+   "n": 30
+  },
+  {
+   "county": "Kent",
+   "n": 11
+  },
+  {
+   "county": "Cork",
+   "n": 11
+  },
+  {
+   "county": "Argyll and Bute",
+   "n": 9
+  }
+ ],
+ "n_islands_named": 208,
+ "dec_vs_jun_set": 46,
+ "dec_vs_jun_rise": 174,
+ "model": {
+  "eye_m": 3.0,
+  "k": 0.13,
+  "near_km": 12.0,
+  "far_km": 150.0,
+  "az_step": 0.25,
+  "mpx_m_50": 24.566387360325955,
+  "mpx_m_60": 19.10925707817078,
+  "dip_deg": 0.05186257565509537,
+  "drop_20km_m": 27.311254120232302,
+  "hidden_50km_m": 128.43670306414842
+ },
+ "overall_set_coast_pc": 90.11394516720407
+}

@@ -1,0 +1,7 @@
+[{"out":"qa/desktop.png","w":1280,"h":800},
+ {"out":"qa/desktop_troon.png","w":1280,"h":800,"q":"beach=Troon&day=79","eval":"1"},
+ {"out":"qa/desktop_date_layers.png","w":1280,"h":800,"q":"mode=date&day=355","eval":"document.getElementById('lyrBtn').click()"},
+ {"out":"qa/phone.png","w":390,"h":800,"dpr":2},
+ {"out":"qa/phone_woolacombe.png","w":390,"h":800,"dpr":2,"q":"beach=Woolacombe%20Sands&day=79","eval":"1"},
+ {"out":"qa/phone_full.png","w":390,"h":800,"dpr":1,"full":true},
+ {"out":"qa/desktop_full.png","w":1280,"h":800,"full":true}]

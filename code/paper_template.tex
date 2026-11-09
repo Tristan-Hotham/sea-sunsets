@@ -1,0 +1,124 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\newfontfamily\headfont{Inter}[UprightFont=*-ExtraBold,BoldFont=*-ExtraBold,Extension=.otf,Path=/usr/share/fonts/opentype/inter/]
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{graphicx,booktabs,float,caption,array,xcolor,longtable}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage[round]{natbib}
+\usepackage{setspace}
+\setstretch{1.05}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\titleformat{\section}{\headfont\Large}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\headfont\large}{\thesubsection}{0.8em}{}
+\captionsetup{font=small,labelfont=bf}
+\urlstyle{same}
+\hypersetup{pdftitle={Where the Sun Sets into the Sea},pdfauthor={Tristan Hotham}}
+
+
+\begin{document}
+\begin{center}
+{\Large\bfseries Where the Sun Sets into the Sea\par}
+\vspace{0.4em}
+{\large Sea sunsets and sunrises through the year at {{n.coast|int}} beaches in Britain and Ireland\par}
+\vspace{1.2em}
+{\large Tristan Hotham\par}
+\vspace{0.3em}
+{\small Independent researcher\\
+ORCID: 0000-0003-4931-9349\\
+DOI: https://doi.org/10.5281/zenodo.24089892\par}
+\vspace{0.8em}
+2026
+\end{center}
+
+\begin{quote}
+\small
+\begin{center}\textbf{Abstract}\end{center}
+From which beaches can one watch the Sun set into, or rise out of, the open sea, and on which days of the year? For the {{n.coast|int}} named coastal beaches of the United Kingdom and Ireland in OpenStreetMap, I place an observer at the water's edge, eye {{model.eye_m|f0}} m above the sea, and cast rays every {{model.az_step|f2}}\textdegree{} across the year's sunrise and sunset bearings, out to {{model.far_km|int}} km. Within {{model.near_km|int}} km the sea is OpenStreetMap's coastline rasterised from OpenFreeMap vector tiles at about 20 to 25 m; beyond, land is terrain above sea level. Land blocks the Sun only where it rises above the sea horizon, allowing for the Earth's curvature and refraction. {{set.any_pc|f1}}\% of beaches have a sea sunset on at least one day of 2026, {{rise.any_pc|f1}}\% a sea sunrise, {{both.pc|f1}}\% both, and {{neither_pc|f1}}\% neither; {{set.all_year|int}} beaches, {{all_year_set_counties.Cornwall|int}} of them in Cornwall, have a sea sunset every day. Sea views are commoner in winter than in summer ({{set.dec21|int}} against {{set.jun21|int}} beaches for sunsets, {{rise.dec21|int}} against {{rise.jun21|int}} for sunrises on the solstices). Wales has the highest share of sea-sunset beaches ({{nations.Wales.set_any_pc|f0}}\%). Islands hide the Sun on some days from {{island_beaches_set|int}} beaches at sunset and {{island_beaches_rise|int}} at sunrise: the Isle of Wight and Mull from the most beaches ({{island_top_n|int}} each), Arran from Troon on {{cases.troon.set_islands.Isle of Arran|int}} days, Lundy from Woolacombe on {{cases.woolacombe_sands.set_islands.Lundy|int}}.
+
+\textbf{Keywords:} sunset; sunrise; horizon; beaches; coastline; viewshed; refraction; OpenStreetMap; Great Britain; Ireland
+\end{quote}
+
+\section{Introduction}
+Whether the Sun sets over the sea is one of the first questions asked of a beach, and one of the least often answered with data. The answer depends on the bearing of sunset, which swings through about 90 to 110\textdegree{} of azimuth over the year at the latitudes of Britain and Ireland, on the shape of the coast (headlands, the far shore of a bay or firth), on islands, and on whether distant land stands above the curved sea horizon. This paper computes it for every named beach, day by day.
+
+\section{Data}
+\textbf{Beaches.} OpenStreetMap \citep{osm} features tagged \texttt{natural=beach} with a name in the United Kingdom and Ireland, with full geometry, queried with QLever \citep{qlever}: {{n.osm_pieces|int}} features, merged into {{n.beaches|int}} beaches where features of the same name in the same country lie within 1 km. {{n.inland|int}} beaches have no sea within 600 m (lake and river beaches) and are excluded, leaving {{n.coast|int}} ({{n.gb|int}} in the United Kingdom, {{n.ie|int}} in Ireland).
+
+\textbf{Sea.} The \texttt{water} layer (class \texttt{ocean}) of the OpenFreeMap \citep{openfreemap} vector tiles, release {{tiles}}, at zoom 10, which carries OpenStreetMap's coastline (mean high water); each tile was rasterised to 1,024 by 1,024 pixels, about {{model.mpx_m_50|f0}} m at 50\textdegree N and {{model.mpx_m_60|f0}} m at 60\textdegree N. Tiles were fetched one at a time, rasterised and deleted.
+
+\textbf{Terrain.} The AWS Terrain Tiles at zoom 10 (about 90 m, with bathymetry below sea level) give land heights along the rays and the land beyond {{model.near_km|int}} km.
+
+\section{Method}
+\textbf{Observer.} Candidate points are sea pixels at least two pixels (about 40 to 50 m) from land, within three pixels of the nearest such pixel to the beach; up to twelve are spread along the beach and the one with the most open bearings within 3 km over the year's sunrise and sunset arcs is chosen, on the reasoning that a visitor can walk along a beach. The eye is {{model.eye_m|f0}} m above the sea.
+
+\textbf{Rays.} Rays leave the observer every {{model.az_step|f2}}\textdegree{} across the range of sunrise and sunset azimuths in the year at its latitude, sampled every 20 m to {{model.near_km|int}} km and every 150 m beyond to {{model.far_km|int}} km. Within {{model.near_km|int}} km any pixel not in the ocean polygon is land, with height the terrain height or at least 5 m; beyond, land is any terrain above 0 m. A land sample at distance $d$ and height $h$ blocks the horizon if its elevation angle $(h-e)/d - d/(2R')$ exceeds the angle of the sea horizon, $-\sqrt{2e/R'}$, where $e$ is the eye height and $R' = R/(1-k)$ with refraction coefficient $k={{model.k|f2}}$. The sea horizon lies {{model.dip_deg|f3}}\textdegree{} below the astronomical horizon; at 50 km, {{model.hidden_50km_m|f0}} m of land is hidden below it.
+
+\textbf{Sun.} Solar declination for each day of 2026 follows the Fourier series of \citet{spencer1971}; the azimuth of sunrise and sunset is that of the Sun's centre at apparent altitude $-0.833$\textdegree{} less the dip of the sea horizon. A day has a sea sunset (or sunrise) if the ray nearest that azimuth is open to {{model.far_km|int}} km.
+
+\textbf{Naming what is in the way.} Blocking land within {{model.near_km|int}} km that belongs to the same connected land mass in the sea mask as the beach is the beach's own coast. Otherwise, land on a Natural Earth polygon of 10,000 km$^2$ or more (Great Britain, Ireland, France) is the mainland, and land on a smaller polygon or on none is an island, named from the OpenStreetMap island place nearest the middle of its polygon, or for islands too small for Natural Earth the nearest island or islet place within 4 km. Specks of land that take the name of the island a beach is on (rocks off its own shore) count as its own coast, and islands that share a name (the two Inishbofins, in Galway and Donegal) are told apart by county. Two names were corrected by eye (Jura, and the Isle of Man, which has no island place in the tiles).
+
+\section{Results}
+\subsection{How many beaches}
+Table~\ref{tab:nations} and Figure~\ref{fig:maps} summarise the results. {{set.any|int}} beaches ({{set.any_pc|f1}}\%) have a sea sunset on at least one day and {{set.all_year|int}} on every day; {{rise.any|int}} ({{rise.any_pc|f1}}\%) have a sea sunrise on at least one day and {{rise.all_year|int}} on every day. {{both.n|int}} have both on some days, {{set_only|int}} only sea sunsets, {{rise_only|int}} only sea sunrises and {{neither|int}} neither. Many beaches with both face south or north across open water, so that the Sun rises and sets over the sea in the same season: {{both_counties.0.n|int}} of them are on the Essex coast around Clacton and {{both_counties.1.n|int}} in Kent. All-year sea sunsets are concentrated on the mainland coast of Cornwall ({{all_year_set_counties.Cornwall|int}}); all-year sea sunrises in Wexford ({{all_year_rise_counties.Wexford|int}}), Wicklow ({{all_year_rise_counties.Wicklow|int}}) and the East Riding of Yorkshire ({{all_year_rise_counties.East Riding of Yorkshire|int}}).
+
+{{TABLE_NATIONS}}
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_maps.png}
+\caption{Days of 2026 with a sunset into, and a sunrise out of, open sea at each beach.}\label{fig:maps}\end{figure}
+
+\subsection{Through the year}
+The share of beaches with a sea sunrise varies most through the year, from a winter high to a summer low; the share with a sea sunset is nearly flat (Figure~\ref{fig:calendar}). On 21 December {{set.dec21|int}} beaches have a sea sunset and {{rise.dec21|int}} a sea sunrise; on 21 June, {{set.jun21|int}} and {{rise.jun21|int}}. {{dec_not_jun_set|int}} beaches have a sea sunset at midwinter but not at midsummer, and {{jun_not_dec_set|int}} the reverse. Figure~\ref{fig:roses} shows four beaches: open Atlantic all year at Sennen Cove, sunrise only at Longsands, Arran in the way at Troon and Lundy at Woolacombe.
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_calendar.png}
+\caption{Share of beaches with a sea sunset or sunrise on each day of 2026.}\label{fig:calendar}\end{figure}
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_roses.png}
+\caption{Sunset and sunrise bearings through the year at four beaches; gold and blue over open sea, grey behind land.}\label{fig:roses}\end{figure}
+
+\subsection{Islands}
+Islands hide the Sun on at least one day from {{island_beaches_set|int}} beaches at sunset and {{island_beaches_rise|int}} at sunrise (Table~\ref{tab:islands}, Figure~\ref{fig:islands}). The Isle of Wight and Mull each affect {{island_top_n|int}} beaches, more than any other island: the Isle of Wight along the Solent and the Sussex coast, Mull from Tiree, Coll and Iona at sunrise and around Oban at sunset. Arran hides the sunset from Troon on {{cases.troon.set_islands.Isle of Arran|int}} days (Figure~\ref{fig:clyde}); Lundy from Woolacombe on {{cases.woolacombe_sands.set_islands.Lundy|int}} days and from Croyde on {{cases.croyde_beach.set_islands.Lundy|int}}, around the equinoxes; the Isle of Man from Fleswick Bay on {{cases.fleswick_bay.set_islands.Isle of Man|int}} days and the sunrise from Gilpin Harbour in County Down on {{cases.gilpin_harbour.rise_islands.Isle of Man|int}}. Most blocked days, though, are blocked by the beach's own coast: {{overall_set_coast_pc|f0}}\% of blocked sunsets.
+
+{{TABLE_ISLANDS}}
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_islands.png}
+\caption{Islands by the number of beaches from which they hide the sunset or sunrise on at least one day.}\label{fig:islands}\end{figure}
+
+\begin{figure}[tbp]\centering\includegraphics[width=0.95\textwidth]{f_clyde.png}
+\caption{The Firth of Clyde: lines of sunset on 20 March from each beach, on the rasterised sea mask.}\label{fig:clyde}\end{figure}
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_nations.png}
+\caption{Share of beaches with a sea sunset, a sea sunrise, or both, by nation.}\label{fig:nations}\end{figure}
+
+{{TABLE_CASES}}
+
+
+\subsection{Checks by eye}
+I checked a handful of well-known beaches against the map and the expected geometry before reading any totals. Sennen Cove, facing the open Atlantic west of Land's End, has a sea sunset on all {{cases.sennen_cove.sea_set_days|int}} days. Fistral at Newquay faces north-west and gets {{cases.fistral_beach.sea_set_days|int}} sea sunsets, but not at midwinter, when the sunset bearing of about 230\textdegree{} crosses its own headland. Longsands at Tynemouth and Killiney in County Dublin face east and get a sea sunrise on every day and no sea sunset, as expected; Dollymount Strand, inside Dublin Bay, loses half its sunrises to Howth ({{cases.dollymount_strand.sea_rise_days|int}} days). Keem Bay on Achill opens to the south-east under high cliffs and gets neither, which matches its setting. Inch in Kerry looks across Dingle Bay to the Iveragh peninsula and gets sea sunsets only around the equinoxes ({{cases.inch_beach.sea_set_days|int}} days). Troon and Woolacombe show Arran and Lundy in the expected directions (Figure~\ref{fig:clyde}). For each of these I also drew the rays over the rasterised sea mask to confirm the observer point and the blocking land.
+
+\section{Discussion}
+Three things decide whether a beach has a sea sunset: which way it faces, how far the sunset bearing swings across its view in a year, and what stands at the ends of that view. Only a beach facing between about west-south-west and west-north-west on an open coast, like the Atlantic coasts of Cornwall, gets one every day; most west-facing beaches lose part of the year to their own headlands or to the far side of a bay, and the result is often a season of sea sunsets rather than a year of them. The curvature of the Earth matters as much as the coastline: a low island 40 or 50 km away is below the sea horizon and does not hide the Sun, while the mountains of Arran or the Isle of Man do. Winter favours sea views because the Sun then rises and sets further south, across the open water that many south-facing beaches look onto, while at midsummer it sets far to the north-west, along the coast.
+
+\section{Limitations}
+The coastline is OpenStreetMap's mean high water line, so at low tide on wide sands the foreground is beach, not sea. Rasterising at zoom 10 smooths features below about 50 m, so very small rocks and stacks are missed, while terrain at 90 m can smear land a little out to sea in the far field. Refraction near the horizon varies with the weather by up to about half a degree, which can change the result on marginal days, and the clear line of sight says nothing about cloud. The best point along each beach is used; from other points the view may be narrower. Only named beaches in OpenStreetMap are included, so coverage follows the mappers (Blackpool's main beach, for example, has no name in the data). Beyond the terrain tiles (south of about 49.6\textdegree N and east of 2.1\textdegree E) far land is not modelled, which matters little because it lies more than 150 km from most beaches.
+
+\section{Data availability}
+The interactive map is at \url{{{PAGE}}}; data and code at \url{{{REPO}}}. \texttt{beaches.csv} gives every beach with its observer point, counts and day-by-day strings; \texttt{results.json} every number in this paper. Data derived from OpenStreetMap are under the Open Database Licence; text and figures CC BY 4.0; code MIT.
+
+\section*{AI assistance}
+{{AI}}
+
+\begin{thebibliography}{9}
+\bibitem[Bast and Buchhold(2017)]{qlever} Bast, H. and Buchhold, B. (2017) QLever: a query engine for efficient SPARQL+Text search. \textit{Proceedings of the 2017 ACM Conference on Information and Knowledge Management (CIKM)}, 647-656.
+\bibitem[OpenFreeMap(2026)]{openfreemap} OpenFreeMap (2026) Vector tiles of OpenStreetMap in the OpenMapTiles schema. \url{https://openfreemap.org/}
+\bibitem[OpenStreetMap(2026)]{osm} OpenStreetMap contributors (2026) OpenStreetMap. Open Database Licence. \url{https://www.openstreetmap.org/}
+\bibitem[Spencer(1971)]{spencer1971} Spencer, J. W. (1971) Fourier series representation of the position of the sun. \textit{Search} 2(5), 172.
+\end{thebibliography}
+\end{document}
